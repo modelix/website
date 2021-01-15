@@ -19,8 +19,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-        with:
-          submodules: true
+      - name: Checkout submodules
+        uses: textbook/git-checkout-submodule-action@master  
       # Runs a single command using the runners shell
       - name: Build Hugo
         uses: lowply/build-hugo@v0.79.0
