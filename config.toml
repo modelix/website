@@ -54,7 +54,7 @@ anchor = "smart"
 [languages]
 [languages.en]
 title = "Modelix"
-description = "Docsy does docs"
+description = "Modelix - A Open Source platform for models on the web"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
