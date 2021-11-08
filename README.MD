@@ -1,6 +1,6 @@
 # Modelix Website Sources
 
-This repository contains the source code for the modelix website. The website is generated with [hugo](https:/gohugo.io).
+This repository contains the source code for the modelix website. The website is generated with [hugo](https://gohugo.io).
 
 ## Editing the website
 
@@ -9,7 +9,7 @@ To be able to edit the website and deploy it you need to have two things install
  - hugo 0.76 or newer
  - NPM for installing the dependencies
 
-### Clonse the Repository
+### Clone the Repository
 
 This repository uses recursive submodules. In order to clone it run:
 
