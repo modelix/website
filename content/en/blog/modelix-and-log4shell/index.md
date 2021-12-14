@@ -15,6 +15,6 @@ As part of a review of our dependencies we discovered that we are in fact using 
 
 Modelix depends on MPS for the browser based MPS editor and via projector. MPS and other IntelliJ based products from JetBrains aren't [affected by Log4Shell](https://blog.jetbrains.com/blog/2021/12/13/log4j-vulnerability-and-jetbrains-products-and-services/). MPS and the IntelliJ Platform are using log4j 1.2.17 at the moment. Similar to modelix their default configuration does not expose the vulnerable parts of log4j. 
 
-JetBrains is [actively working](https://youtrack.jetbrains.com/issue/IDEA-265069) on replacing log4f 1.x. 
+JetBrains is [actively working](https://youtrack.jetbrains.com/issue/IDEA-265069) on replacing log4j 1.x. 
 
 If you have any questions feels free to reach out via the [#modelix](https://jetbrains-mps.slack.com/archives/C01ADCD6VSM) channel in the MPS Slack.
