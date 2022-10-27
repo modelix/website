@@ -14,9 +14,20 @@ You need a PostgreSQL database, the model server and the MPS plugin for the UI s
 
 ## Running without kubernetes
 
-- `./gradlew` in the root directory
-- open the project in the folder "mps" with MPS 2020.1.1
-- <http://localhost:33333/>
+*   Clone the project on [modelix](https://github.com/modelix/modelix) repository
+*   Add `gpr.user` and `gpr.key` to [gradle.properties](https://github.com/modelix/modelix/blob/mps/2020.3/gradle.properties)
+
+```plaintext
+...
+
+gpr.user="your_github_username" 
+gpr.key="your_github_personal_access_token"
+```
+
+*   Install JAVA11.0.16 or higher. Check java and gradle compatibility matrix via [gradle.org](https://docs.gradle.org/current/userguide/compatibility.html#:~:text=A%20Java%20version%20between%208,used%20for%20compile%20or%20test.)
+*   `./gradlew` in the root directory. If you are using Windows run via **cygwin** or **gitbash** terminal.
+*   open the project in the **mps** folder with the MPS version specified in [mps-version.properties](https://github.com/modelix/modelix/blob/mps/2020.3/mps-version.properties)
+*  Navigate to [http://localhost:33333](http://localhost:33333)
 
 This allows you to edit the models stored locally in MPS.
 Optionally, you can run the model server and connect your MPS to it:
@@ -29,9 +40,11 @@ Optionally, you can run the model server and connect your MPS to it:
   - option 2: use your own PostgreSQL server
     - check the file [./db/initdb.sql](./db/initdb.sql) for the required schema
     - adjust the connection properties in [model-server/src/main/resources/org/modelix/model/server/database.properties](https://github.com/modelix/modelix/blob/master/model-server/src/main/resources/org/modelix/model/server/database.properties)
-- model server
-  - `cd model-server`
-  - `../gradlew run`
+*   model server
+    *   Clone the repository on [modelix.core](https://github.com/modelix/modelix.core)
+    *   `cd model-server`
+    *   **NOTE**: before `../gradlew run` make sure that db container is running.
+    *   `../gradlew run`
 - connect MPS to the model server
   - open the "Cloud" view in the bottom left corner
   - In the context menu of the root node labeled "Cloud" choose "Add Repository"
