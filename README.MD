@@ -6,7 +6,7 @@ This repository contains the source code for the modelix website. The website is
 
 To be able to edit the website and deploy it you need to have two things installed:
 
- - hugo 0.76 or newer
+ - hugo 0.110 (newer versions will break)
  - NPM for installing the dependencies
 
 ### Clone the Repository

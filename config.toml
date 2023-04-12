@@ -47,6 +47,12 @@ anchor = "smart"
 # Additional menu items
 
 
+[menu]
+  [[menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    url = "https://docs.modelix.org"
+    weight = 99
 
 
 # Language configuration

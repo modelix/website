@@ -15,7 +15,7 @@ The modelix project develops a next generation language workbench that is native
 * Database/Cloud storage for MPS models with realtime collaboration
 * Server-based execution of MPS and browser-based editors
 
-Read on to find out more, or visit our [documentation](/docs/) to get started!
+Read on to find out more, or visit our [documentation](https://docs.modelix.org/) to get started!
 {{% /blocks/cover %}}
 
 {{% blocks/section type="section" color="primary" %}}
