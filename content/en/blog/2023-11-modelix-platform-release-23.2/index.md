@@ -37,7 +37,7 @@ The [ModelQL query language](https://docs.modelix.org/modelix/23.2/core/explanat
 
 ## Model Client as NPM Package (experimental)
 
-The previously existing [model client](https://github.com/modelix/modelix.core/tree/23.2/model-client) is now also published as [`@modelix/model-client` NPM package](https://artifacts.itemis.cloud/service/rest/repository/browse/npm-open/%40modelix/model-client/).
+The previously existing [model client](https://github.com/modelix/modelix.core/tree/modelix-23.2/model-client) is now also published as [`@modelix/model-client` NPM package](https://artifacts.itemis.cloud/service/rest/repository/browse/npm-open/%40modelix/model-client/).
 
 The exposed API is minimal and experimental. 
 In the future, we want to make more features from the Kotlin model client directly accessible from the exposed API in the NPM package.
@@ -51,9 +51,12 @@ After that, we want to stabilize the API and show you how you can use it for you
 
 ## MPS Model Adapters
 
-We created [adapters](https://github.com/modelix/modelix.core/tree/23.2/mps-model-adapters) that serve as an interface between MPS and the modelix [model-api](https://docs.modelix.org/modelix/23.2/core/reference/component-model-api.html).
+We created [adapters](https://github.com/modelix/modelix.core/tree/modelix-23.2/mps-model-adapters) between MPS and modelix.
+They forward changes made to a model through the [model-api of modelix](https://docs.modelix.org/modelix/23.2/core/reference/component-model-api.html) to the [Open API of MPS](https://www.jetbrains.com/help/mps/open-api-accessing-models-from-code.html).
 They are compatible with all MPS versions that modelix currently supports.
 
+With their help, it is possible to implement access and synchronization from modelix components to MPS.
+The [bulk-model-sync Gradle Plugin](#bulk-model-synchronization-plugin-experimental) is an example component that uses them.
 
 ## Bulk Model Synchronization Plugin (experimental)
 
@@ -69,7 +72,7 @@ The plugin is considered unstable, but will be stabilized soon.
 
 
 Up until now, we built and released MPS-specific components for each MPS version individually.
-Going forward, we want to release single components, which are compatible with all MPS versions, that are currently supported by modelix.
+Going forward, we want to release single components, which are compatible with all MPS versions that are currently supported by modelix.
 The first component to follow this new approach is [mps-model-adapters](#mps-model-adapters)
 
 To achieve that, we separate code in MPS solutions from support library code wherever possible.
@@ -92,6 +95,4 @@ This aims to increase developer velocity, reduce bugs and provide more security 
 
 # What's To Come
 
-Unfortunately, we were not able to update the roadmap before releasing 23.2.
-We are dedicated to bring an updated version during December 2023 after our already scheduled planning sessions.
-Please check the [latest roadmap in our documentation](https://docs.modelix.org/modelix/main/main/roadmap.html).
+We are in the process of planning our [roadmap](https://docs.modelix.org/modelix/main/main/roadmap.html) and are aiming to update it this year.
