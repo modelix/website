@@ -21,7 +21,7 @@ buildToolsVersion = 1.0.11
 modelixMPSPatchVersion = 145
 ```
 
-If you want to know how to use this platform in your Gradle build, check out the corresponding [Documentation](https://docs.modelix.org/modelix/latest/platform/howto/usage-platform.html).
+If you want to know how to use this platform in your Gradle build, check out the corresponding [Documentation](https://docs.modelix.org/modelix/main/platform/howto/usage-platform.html).
 
 The platform is published to the [itemis Nexus](https://artifacts.itemis.cloud/#browse/browse:maven-mps:org%2Fmodelix%2Fplatform%2Fmaven-metadata.xml) as well as to [GitHub Packages](https://github.com/orgs/modelix/packages?repo_name=modelix.platform).
 
