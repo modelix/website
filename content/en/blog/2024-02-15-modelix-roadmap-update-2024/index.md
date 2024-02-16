@@ -10,6 +10,6 @@ We summarize the key priorities in a dedicated overview alongside more detailed 
 Please contact us if you have questions, want to discuss the key priorities and our plans, or seek technical support.
 We value your feedback!
 
-Come find us over in the [#modelix Slack channel](https://jetbrains-mps.slack.com/archives/C01ADCD6VSM) or [contact us via E-Mail](mailto:modelix@itemis.com).
+Come find us over in the [#modelix Slack channel](https://jetbrains-mps.slack.com/archives/C01ADCD6VSM) or [contact us via email](mailto:modelix@itemis.com).
 
 
