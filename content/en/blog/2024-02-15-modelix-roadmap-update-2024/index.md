@@ -1,5 +1,5 @@
 ---
-date: 2024-02-15
+date: 2024-02-16
 title: "Modelix Roadmap Update 2024"
 ---
 
