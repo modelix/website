@@ -1,6 +1,6 @@
 
 ---
-title: "News about Modelix"
+title: "News"
 linkTitle: "News"
 menu:
   main:
