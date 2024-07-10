@@ -6,16 +6,9 @@ This repository contains the source code for the modelix website. The website is
 
 To be able to edit the website and deploy it you need to have two things installed:
 
- - hugo 0.110 (newer versions will break)
+ - hugo 0.128.2
+ - Go (required for the build with hugo)
  - NPM for installing the dependencies
-
-### Clone the Repository
-
-This repository uses recursive submodules. In order to clone it run:
-
-```
-git clone --recurse-submodules https://github.com/modelix/website.git
-```
 
 ### Install dependencies
 
@@ -30,11 +23,3 @@ to install the required CSS tools.
 ### Edit
 
 Edit the sources with your favorite editor. You can run `hugo server` in the background to get a live preview of your changes in the browser.
-
-### Commit and Deploy
-
-Commit your changes once you are finished.
-
-Do deploy the website run `./deploy.sh` in the root of the repository. This will rebuild the website with hugo and push the changes to the github pages repository.
-
-The github pages repository is included as a submodule to seperate the source code and the generate HTML, therefor please commit once more after you have ran the deploy script.
